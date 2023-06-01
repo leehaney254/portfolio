@@ -1,19 +1,7 @@
 import React from 'react';
 import { name, aboutParagraph } from '../data/data';
 import profile from '../assets/profile.jpg'
-import javaScript from '../assets/javascript.svg';
-import ruby from '../assets/ruby.svg';
-import c from '../assets/c.svg';
-import react from '../assets/react.svg';
-import redux from '../assets/redux.svg';
-import typescript from '../assets/typescript.svg';
-import rails from '../assets/rails.svg';
-import node from '../assets/node.svg';
-import postgres from '../assets/postgres.svg';
-import mongo from '../assets/mongodb.svg';
-import git from '../assets/git.svg';
-import github from '../assets/github.svg';
-import vs from '../assets/visualStudio.svg';
+import { languages, libraries, db, tools } from '../data/data';
 
 const About = () => {
   return (
@@ -29,35 +17,50 @@ const About = () => {
           <p className="text-green-600">My Skills</p>
           <div>
             <h3 className="text-3xl text-center font-bold">Languages</h3>
-            <div className="flex flex-wrap">
-              <img src={javaScript} alt="JS" />
-              <img src={ruby} alt="ruby" />
-              <img src={c} alt="C" />
+            <div className="flex flex-wrap justify-center">
+              {
+                languages.map((item) => {
+                  return (
+                    <img src={item.link} alt={item.name} />
+                  );
+                })
+              }
             </div>
           </div>
           <div>
             <h3 className="text-3xl text-center font-bold">Libraries & Frameworks</h3>
-            <div className="flex flex-wrap">
-              <img src={react} alt="react" />
-              <img src={redux} alt="redux" />
-              <img src={typescript} alt="typescript" />
-              <img src={rails} alt="rails" />
-              <img src={node} alt="node" />
+            <div className="flex flex-wrap justify-center">
+              {
+                libraries.map((item) => {
+                  return (
+                    <img src={item.link} alt={item.name} />
+                  );
+                })
+              }
             </div>
           </div>
           <div>
             <h3 className="text-3xl text-center font-bold">Database Management</h3>
-            <div className="flex flex-wrap">
-              <img src={postgres} alt="JS" />
-              <img src={mongo} alt="ruby" />
+            <div className="flex flex-wrap justify-center">
+              {
+                db.map((item) => {
+                  return (
+                    <img src={item.link} alt={item.name} />
+                  );
+                })
+              }
             </div>
           </div>
           <div>
             <h3 className="text-3xl text-center font-bold">Developer Tools</h3>
-            <div className="flex flex-wrap">
-              <img src={git} alt="JS" />
-              <img src={github} alt="ruby" />
-              <img src={vs} alt="C" />
+            <div className="flex flex-wrap justify-center">
+              {
+                tools.map((item) => {
+                  return (
+                    <img src={item.link} alt={item.name} />
+                  );
+                })
+              }
             </div>
           </div>
         </div>
