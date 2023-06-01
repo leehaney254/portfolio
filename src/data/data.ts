@@ -14,6 +14,7 @@ import mongo from '../assets/mongodb.svg';
 import git from '../assets/git.svg';
 import github from '../assets/github.svg';
 import vs from '../assets/visualStudio.svg';
+import diverse from '../assets/diversity.jpg'
 
 export const name = 'Leehaney Gerorge';
 
@@ -129,3 +130,24 @@ export const tools = [
     link: vs,
     name: 'vs'
   }];
+
+export const posts = [
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+]

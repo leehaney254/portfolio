@@ -42,7 +42,7 @@ const Projects = () => {
         }
       </div>
       <div className="flex justify-end mt-5 mb-5">
-        <p className="flex items-center text-lg gap-2">Other notable Projects <AiOutlineArrowRight /></p>
+        <p className="flex items-center text-lg gap-2 text-green-600">Other notable Projects <AiOutlineArrowRight /></p>
       </div>
     </section>
   )
