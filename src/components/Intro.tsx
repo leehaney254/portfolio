@@ -1,7 +1,6 @@
 import React from 'react'
 import { AiOutlineMenu } from "react-icons/ai";
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
-import { name, profession, catchPhrase, linkedin } from '../data/data';
+import { name, profession, catchPhrase, socilaMedia } from '../data/data';
 
 const Intro = () => {
   return (
@@ -14,9 +13,13 @@ const Intro = () => {
         <p className="text-xl">{profession}</p>
         <p className="text-lg">{catchPhrase}</p>
         <div className="flex flex-row gap-2">
-          <a className="text-2xl text-pink-600" href={linkedin}><FaLinkedinIn /></a>
-          <a className="text-2xl text-pink-600" href={linkedin}><FaGithub /></a>
-          <a className="text-2xl text-pink-600" href={linkedin}><FaTwitter /></a>
+          {
+            socilaMedia.map((element) => {
+              return (
+                <a className="text-2xl text-green-400" target="_blank" href={element.link}><element.icon /></a>
+              )
+            })
+          }
         </div>
       </div>
     </section>
