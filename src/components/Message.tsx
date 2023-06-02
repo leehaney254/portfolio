@@ -15,9 +15,9 @@ const Message: React.FC = () => {
   };
   return (
     <section className="p-4 bg-black h-screen text-white">
-      <div className="flex flex-col gap-2 items-center">
+      <div className="flex flex-col gap-2 items-center mt-8">
         <p className="text-green-600">LETS CHAT!</p>
-        <h2 className="text-xl font-bold text-center">Got questions or proposal, or just want to say hello? Go ahead</h2>
+        <h2 className="text-xl font-bold text-center mb-10">Got questions or proposal, or just want to say hello? Go ahead</h2>
         <form onSubmit={sendEmail}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
@@ -64,7 +64,7 @@ const Message: React.FC = () => {
             Submit
           </button>
         </form>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 mt-10">
           {
             socilaMedia.map((element, index) => {
               return (

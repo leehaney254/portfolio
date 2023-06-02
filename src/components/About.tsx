@@ -5,7 +5,7 @@ import { languages, libraries, db, tools } from '../data/data';
 
 const About = () => {
   return (
-    <section className="p-4">
+    <section className="p-4 mt-8">
       <div className="flex flex-col gap-2 items-center">
         <p className="text-green-600">Who is {name}?</p>
         <h2 className="text-3xl font-bold">A Bit About Me</h2>
@@ -13,9 +13,9 @@ const About = () => {
         <p className='text-center'>{aboutParagraph}</p>
       </div>
       <div>
-        <div className="flex flex-col gap-2 items-center">
+        <div className="flex flex-col gap-2 items-center mt-10">
           <p className="text-green-600">My Skills</p>
-          <div>
+          <div className="mb-5">
             <h3 className="text-3xl text-center font-bold">Languages</h3>
             <div className="flex flex-wrap justify-center">
               {
@@ -27,7 +27,7 @@ const About = () => {
               }
             </div>
           </div>
-          <div>
+          <div className="mb-5">
             <h3 className="text-3xl text-center font-bold">Libraries & Frameworks</h3>
             <div className="flex flex-wrap justify-center">
               {
@@ -39,7 +39,7 @@ const About = () => {
               }
             </div>
           </div>
-          <div>
+          <div className="mb-5">
             <h3 className="text-3xl text-center font-bold">Database Management</h3>
             <div className="flex flex-wrap justify-center">
               {
@@ -51,7 +51,7 @@ const About = () => {
               }
             </div>
           </div>
-          <div>
+          <div className="mb-5">
             <h3 className="text-3xl text-center font-bold">Developer Tools</h3>
             <div className="flex flex-wrap justify-center">
               {

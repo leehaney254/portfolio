@@ -6,9 +6,9 @@ import { Project } from '../data/data';
 const Projects = () => {
   return (
     <section className="p-4 bg-black text-white">
-      <div className="flex flex-col gap-2 items-center">
+      <div className="flex flex-col gap-2 items-center mt-8">
         <p className="text-green-600">MY PROJECTS</p>
-        <h2 className="text-3xl font-bold">Yeah, I work hard 💼</h2>
+        <h2 className="text-3xl font-bold mb-10">Yeah, I work hard 💼</h2>
       </div>
       <div className='flex flex-col gap-5 flex-wrap'>
         {
