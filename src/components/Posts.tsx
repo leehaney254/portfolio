@@ -3,7 +3,7 @@ import { posts } from '../data/data';
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const Posts = () => {
+const Posts: React.FC = () => {
   return (
     <section className="p-4">
       <div className="flex flex-col gap-2 items-center">
@@ -11,9 +11,9 @@ const Posts = () => {
         <h2 className="text-3xl font-bold">Tech Adventures 🔥</h2>
         <div>
           {
-            posts.map((element) => {
+            posts.map((element, index) => {
               return (
-                <div className="relative mt-5">
+                <div key={index} className="relative mt-5">
                   <img className="rounded-xl" src={element.Image} alt={element.heading} />
                   <div className="absolute inset-0">
                     <div className="bg-black opacity-50 text-white h-full p-4 rounded-xl flex flex-col justify-between">

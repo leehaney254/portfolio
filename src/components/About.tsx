@@ -19,9 +19,9 @@ const About = () => {
             <h3 className="text-3xl text-center font-bold">Languages</h3>
             <div className="flex flex-wrap justify-center">
               {
-                languages.map((item) => {
+                languages.map((item, index) => {
                   return (
-                    <img src={item.link} alt={item.name} />
+                    <img key={index} src={item.link} alt={item.name} />
                   );
                 })
               }
@@ -31,9 +31,9 @@ const About = () => {
             <h3 className="text-3xl text-center font-bold">Libraries & Frameworks</h3>
             <div className="flex flex-wrap justify-center">
               {
-                libraries.map((item) => {
+                libraries.map((item, index) => {
                   return (
-                    <img src={item.link} alt={item.name} />
+                    <img key={index} src={item.link} alt={item.name} />
                   );
                 })
               }
@@ -43,9 +43,9 @@ const About = () => {
             <h3 className="text-3xl text-center font-bold">Database Management</h3>
             <div className="flex flex-wrap justify-center">
               {
-                db.map((item) => {
+                db.map((item, index) => {
                   return (
-                    <img src={item.link} alt={item.name} />
+                    <img key={index} src={item.link} alt={item.name} />
                   );
                 })
               }
@@ -55,9 +55,9 @@ const About = () => {
             <h3 className="text-3xl text-center font-bold">Developer Tools</h3>
             <div className="flex flex-wrap justify-center">
               {
-                tools.map((item) => {
+                tools.map((item, index) => {
                   return (
-                    <img src={item.link} alt={item.name} />
+                    <img key={index} src={item.link} alt={item.name} />
                   );
                 })
               }

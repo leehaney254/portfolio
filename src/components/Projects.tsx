@@ -14,7 +14,7 @@ const Projects = () => {
         {
           Project.map((element, index) => {
             return (
-              <div className="border-charcoal border-2 p-4 rounded-3xl">
+              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl">
                 <img className="rounded-xl" src={element.image} alt="project screenshot" />
                 <p className="text-charcoal">{index + 1}</p>
                 <div>
@@ -24,9 +24,9 @@ const Projects = () => {
                   </p>
                   <ul className="flex gap-3 flex-wrap">
                     {
-                      element.technologies.map((tech) => {
+                      element.technologies.map((tech, index) => {
                         return (
-                          <li className="bg-charcoal p-1 rounded text-black">{tech}</li>
+                          <li key={index} className="bg-charcoal p-1 rounded text-black">{tech}</li>
                         )
                       })
                     }

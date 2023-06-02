@@ -1,21 +1,33 @@
-import React from 'react'
+import React, { ChangeEvent } from 'react'
 import { socilaMedia } from '../data/data';
+import emailjs from 'emailjs-com';
 
-const Message = () => {
+const Message: React.FC = () => {
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_32o15ew', 'template_wmb2vmh', e.target, 'DeF4bbsnMMS2DaOY9')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
   return (
-    <section className="p-4 bg-black text-white">
+    <section className="p-4 bg-black h-screen text-white">
       <div className="flex flex-col gap-2 items-center">
         <p className="text-green-600">LETS CHAT!</p>
         <h2 className="text-xl font-bold text-center">Got questions or proposal, or just want to say hello? Go ahead</h2>
-        <form>
+        <form onSubmit={sendEmail}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
-              Name
+              Your Name
             </label>
             <input
               type="text"
               id="name"
-              className="border border-gray-300 rounded-md px-4 py-2 w-full"
+              name="name"
+              className="inputborder bg-black rounded-md px-4 py-2 w-full"
               required
             />
           </div>
@@ -27,7 +39,8 @@ const Message = () => {
             <input
               type="email"
               id="email"
-              className="border border-gray-300 rounded-md px-4 py-2 w-full"
+              name="email"
+              className="inputborder bg-black rounded-md px-4 py-2 w-full"
               required
             />
           </div>
@@ -38,7 +51,8 @@ const Message = () => {
             </label>
             <textarea
               id="message"
-              className="border border-gray-300 rounded-md px-4 py-2 w-full"
+              name="message"
+              className="inputborder bg-black rounded-md px-4 py-2 w-full"
               required
             ></textarea>
           </div>
@@ -52,9 +66,9 @@ const Message = () => {
         </form>
         <div className="flex flex-row gap-2">
           {
-            socilaMedia.map((element) => {
+            socilaMedia.map((element, index) => {
               return (
-                <a className="text-2xl text-green-400" target="_blank" href={element.link}><element.icon /></a>
+                <a key={index} className="text-2xl text-green-400" target="_blank" href={element.link}><element.icon /></a>
               )
             })
           }
