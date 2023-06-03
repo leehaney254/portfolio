@@ -6,15 +6,15 @@ import { Project } from '../data/data';
 const Projects = () => {
   return (
     <section className="p-4 bg-black text-white">
-      <div className="flex flex-col gap-2 items-center">
+      <div className="flex flex-col gap-2 items-center mt-8">
         <p className="text-green-600">MY PROJECTS</p>
-        <h2 className="text-3xl font-bold">Yeah, I work hard 💼</h2>
+        <h2 className="text-3xl font-bold mb-10">Yeah, I work hard 💼</h2>
       </div>
       <div className='flex flex-col gap-5 flex-wrap'>
         {
           Project.map((element, index) => {
             return (
-              <div className="border-charcoal border-2 p-4 rounded-3xl">
+              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl">
                 <img className="rounded-xl" src={element.image} alt="project screenshot" />
                 <p className="text-charcoal">{index + 1}</p>
                 <div>
@@ -24,9 +24,9 @@ const Projects = () => {
                   </p>
                   <ul className="flex gap-3 flex-wrap">
                     {
-                      element.technologies.map((tech) => {
+                      element.technologies.map((tech, index) => {
                         return (
-                          <li className="bg-charcoal p-1 rounded text-black">{tech}</li>
+                          <li key={index} className="bg-charcoal p-1 rounded text-black">{tech}</li>
                         )
                       })
                     }
@@ -42,7 +42,7 @@ const Projects = () => {
         }
       </div>
       <div className="flex justify-end mt-5 mb-5">
-        <p className="flex items-center text-lg gap-2">Other notable Projects <AiOutlineArrowRight /></p>
+        <p className="flex items-center text-lg gap-2 text-green-600">Other notable Projects <AiOutlineArrowRight /></p>
       </div>
     </section>
   )

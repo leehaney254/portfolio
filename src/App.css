@@ -1,0 +1,10 @@
+.inputborder {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.inputborder:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #22c55e;
+}

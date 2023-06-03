@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineMenu } from "react-icons/ai";
 import { name, profession, catchPhrase, socilaMedia } from '../data/data';
 
-const Intro = () => {
+const Intro: React.FC = () => {
   return (
     <section className="p-4 bg-black text-white h-screen">
       <div className="flex justify-end">
@@ -14,9 +14,9 @@ const Intro = () => {
         <p className="text-lg">{catchPhrase}</p>
         <div className="flex flex-row gap-2">
           {
-            socilaMedia.map((element) => {
+            socilaMedia.map((element, index) => {
               return (
-                <a className="text-2xl text-green-400" target="_blank" href={element.link}><element.icon /></a>
+                <a className="text-2xl text-green-400" key={index} target="_blank" href={element.link}><element.icon /></a>
               )
             })
           }

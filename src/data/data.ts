@@ -1,6 +1,20 @@
 import capstone from '../assets/tutors.png';
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import javaScript from '../assets/javascript.svg';
+import ruby from '../assets/ruby.svg';
+import c from '../assets/c.svg';
+import react from '../assets/react.svg';
+import redux from '../assets/redux.svg';
+import typescript from '../assets/typescript.svg';
+import rails from '../assets/rails.svg';
+import node from '../assets/node.svg';
+import postgres from '../assets/postgres.svg';
+import mongo from '../assets/mongodb.svg';
+import git from '../assets/git.svg';
+import github from '../assets/github.svg';
+import vs from '../assets/visualStudio.svg';
+import diverse from '../assets/diversity.jpg'
 
 export const name = 'Leehaney Gerorge';
 
@@ -55,3 +69,85 @@ export const Project = [
     github: 'https://github.com/leehaney254/tutors-appointment-frontend',
   },
 ];
+
+export const languages = [
+  {
+    link: javaScript,
+    name: 'JS',
+  },
+  {
+    link: ruby,
+    name: 'ruby'
+  },
+  {
+    link: c,
+    name: 'C'
+  }];
+
+export const libraries = [
+  {
+    link: react,
+    name: 'react'
+  },
+  {
+    link: redux,
+    name: 'redux'
+  },
+  {
+    link: typescript,
+    name: 'typescript'
+  },
+  {
+    link: rails,
+    name: 'rails'
+  },
+  {
+    link: node,
+    name: 'node'
+  }
+];
+
+export const db = [
+  {
+    link: postgres,
+    name: 'postgres'
+  },
+  {
+    link: mongo,
+    name: 'mongo'
+  }];
+
+export const tools = [
+  {
+    link: git,
+    name: 'git'
+  },
+  {
+    link: github,
+    name: 'github'
+  },
+  {
+    link: vs,
+    name: 'vs'
+  }];
+
+export const posts = [
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+]
