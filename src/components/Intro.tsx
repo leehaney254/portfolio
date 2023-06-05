@@ -19,7 +19,7 @@ const Intro: React.FC = () => {
       </div>
       <div className="mt-38 flex flex-col gap-1 md:flex-row-reverse md:gap-4 md:mt-0">
         <div>
-          <h1 className="text-3xl font-bold">{name}</h1>
+          <h1 className="text-3xl font-bold lg:text-5xl">{name}</h1>
           <p className="text-xl">{profession}</p>
           <p className="text-lg">{catchPhrase}</p>
         </div>
