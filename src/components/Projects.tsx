@@ -10,15 +10,15 @@ const Projects = () => {
         <p className="text-green-600">MY PROJECTS</p>
         <h2 className="text-3xl font-bold mb-10">Yeah, I work hard 💼</h2>
       </div>
-      <div className='flex flex-col gap-5 flex-wrap md:p-5 md:items-center'>
+      <div className='flex flex-col gap-10 flex-wrap md:p-5 md:items-center'>
         {
           Project.map((element, index) => {
             return (
-              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl md:flex md:gap-4 md:w-3/4 md:h-96">
-                <img className="rounded-xl md:w-56 md:h-52" src={element.image} alt="project screenshot" />
-                <div>
+              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl lg:flex lg:gap-4 lg:w-3/4 lg:h-72">
+                <img className="rounded-xl lg:w-72 lg:h-64" src={element.image} alt="project screenshot" />
+                <div className="lg:flex lg:flex-col gap-2 ">
                   <p className="text-charcoal">{index + 1}</p>
-                  <div>
+                  <div className="lg:flex lg:flex-col gap-2 ">
                     <h4 className="text-2xl font-bold">{element.title}</h4>
                     <p>
                       {element.description}
