@@ -1,12 +1,12 @@
 import React from 'react'
-import { AiOutlineMenu } from "react-icons/ai";
+import { Spin as Hamburger } from 'hamburger-react'
 import { name, profession, catchPhrase, socilaMedia } from '../data/data';
 
 const Intro: React.FC = () => {
   return (
     <section className="p-4 bg-black text-white h-screen">
       <div className="flex justify-end">
-        <AiOutlineMenu className="text-3xl" />
+        <Hamburger />
       </div>
       <div className="mt-40 flex flex-col gap-1">
         <h1 className="text-3xl font-bold">{name}</h1>
