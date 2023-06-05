@@ -9,12 +9,12 @@ const Posts: React.FC = () => {
       <div className="flex flex-col gap-2 items-center">
         <p className="text-green-600">FEATURED POSTS</p>
         <h2 className="text-3xl font-bold mb-8">Tech Adventures 🔥</h2>
-        <div>
+        <div className="md:flex md:justify-center md:gap-10 md:flex-wrap md:mx-5">
           {
             posts.map((element, index) => {
               return (
                 <div key={index} className="relative mt-5">
-                  <img className="rounded-xl" src={element.Image} alt={element.heading} />
+                  <img className="rounded-xl md:w-72 md:h-80" src={element.Image} alt={element.heading} />
                   <div className="absolute inset-0">
                     <div className="bg-black opacity-50 text-white h-full p-4 rounded-xl flex flex-col justify-between">
                       <h1 className="text-2xl font-bold">{element.heading}</h1>

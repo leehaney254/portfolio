@@ -150,4 +150,22 @@ export const posts = [
     like: 100,
     description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
   },
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+  {
+    Image: diverse,
+    heading: "Benefits of diversity",
+    like: 100,
+    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
 ]
