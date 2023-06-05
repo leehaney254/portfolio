@@ -10,30 +10,32 @@ const Projects = () => {
         <p className="text-green-600">MY PROJECTS</p>
         <h2 className="text-3xl font-bold mb-10">Yeah, I work hard 💼</h2>
       </div>
-      <div className='flex flex-col gap-5 flex-wrap'>
+      <div className='flex flex-col gap-5 flex-wrap md:p-5 md:items-center'>
         {
           Project.map((element, index) => {
             return (
-              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl">
-                <img className="rounded-xl" src={element.image} alt="project screenshot" />
-                <p className="text-charcoal">{index + 1}</p>
+              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl md:flex md:gap-4 md:w-3/4 md:h-96">
+                <img className="rounded-xl md:w-56 md:h-52" src={element.image} alt="project screenshot" />
                 <div>
-                  <h4 className="text-2xl font-bold">{element.title}</h4>
-                  <p>
-                    {element.description}
-                  </p>
-                  <ul className="flex gap-3 flex-wrap">
-                    {
-                      element.technologies.map((tech, index) => {
-                        return (
-                          <li key={index} className="bg-charcoal p-1 rounded text-black">{tech}</li>
-                        )
-                      })
-                    }
-                  </ul>
-                  <div className="flex gap-5">
-                    <a href={element.live} className="flex items-center gap-2">Live Site <AiOutlineArrowRight /></a>
-                    <a href={element.github} className="flex items-center gap-2">GitHub <AiOutlineArrowRight /></a>
+                  <p className="text-charcoal">{index + 1}</p>
+                  <div>
+                    <h4 className="text-2xl font-bold">{element.title}</h4>
+                    <p>
+                      {element.description}
+                    </p>
+                    <ul className="flex gap-3 flex-wrap">
+                      {
+                        element.technologies.map((tech, index) => {
+                          return (
+                            <li key={index} className="bg-charcoal p-1 rounded text-black">{tech}</li>
+                          )
+                        })
+                      }
+                    </ul>
+                    <div className="flex gap-5">
+                      <a href={element.live} className="flex items-center gap-2">Live Site <AiOutlineArrowRight /></a>
+                      <a href={element.github} className="flex items-center gap-2">GitHub <AiOutlineArrowRight /></a>
+                    </div>
                   </div>
                 </div>
               </div>
