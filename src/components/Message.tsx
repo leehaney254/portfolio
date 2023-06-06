@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { socilaMedia } from '../data/data';
 import emailjs from 'emailjs-com';
 import massageImg from '../assets/message.png';
+
 
 const Message: React.FC = () => {
   const sendEmail = (e: any) => {

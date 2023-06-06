@@ -16,7 +16,7 @@ const Intro: React.FC = () => {
 
   return (
     <section id="Intro" className="p-4 bg-black text-white h-screen flex flex-col gap-6 md:items-center md:justify-center md: lg:flex-row">
-      <div className="flex justify-end md:fixed md:top-30 md:left-0 md:right-0">
+      <div className="flex justify-end md:fixed md:top-30 md:right-0">
         <div className="md:hidden">
           <Hamburger onToggle={toogleMenu} />
         </div>
