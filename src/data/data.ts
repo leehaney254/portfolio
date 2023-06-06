@@ -1,4 +1,6 @@
 import capstone from '../assets/tutors.png';
+import dash from '../assets/dashboard.png';
+import world from '../assets/word.png';
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { AiFillHome, AiOutlineFundProjectionScreen, AiOutlineMessage } from "react-icons/ai";
@@ -56,20 +58,20 @@ export const Project = [
     github: 'https://github.com/leehaney254/tutors-appointment-frontend',
   },
   {
-    image: capstone,
-    title: 'Tutors Appointment',
-    description: '🌟 Seeking Quality Education? Look No Further! 📚✨ 🔥 Introducing Tutors-appointment! 🎓 Your ultimate destination for booking top-notch tutors tailored to your learning needs! With authentication and authorization implimented privilages and roles have been easily assigned to users and administrators.💪',
-    technologies: ['React js', 'Redux', 'Tailwind', 'Ruby on Rails', 'Postgresql'],
-    live: 'https://starlit-syrniki-d3f2fe.netlify.app/login',
-    github: 'https://github.com/leehaney254/tutors-appointment-frontend',
+    image: dash,
+    title: 'Customizable dashboard',
+    description: '🌟This intuitive and customizable tool allows users to monitor and manage their website\'s performance. It provides quick access to key metrics and insights critical to success. The dashboard is essential for making informed decisions and taking real-time action based on displayed data. Its fully customizable interface allows users to tailor the app to their needs and preferences.💪',
+    technologies: ['React js', 'React-icons', 'Tailwind', 'React-contet', 'Syncfusion', 'webpack'],
+    live: 'https://dashboard-c0k0.onrender.com/',
+    github: 'https://github.com/leehaney254/dashboard',
   },
   {
-    image: capstone,
-    title: 'Tutors Appointment',
-    description: '🌟 Seeking Quality Education? Look No Further! 📚✨ 🔥 Introducing Tutors-appointment! 🎓 Your ultimate destination for booking top-notch tutors tailored to your learning needs! With authentication and authorization implimented privilages and roles have been easily assigned to users and administrators.💪',
-    technologies: ['React js', 'Redux', 'Tailwind', 'Ruby on Rails', 'Postgresql'],
-    live: 'https://starlit-syrniki-d3f2fe.netlify.app/login',
-    github: 'https://github.com/leehaney254/tutors-appointment-frontend',
+    image: world,
+    title: 'World-Info',
+    description: '🌟 This is an exciting mobile web application that provides an immersive experience for all geography lovers out there. With this app, you can easily discover and learn more about countries around the world in just a few clicks. The app is user-friendly, with a simple interface that allows you to filter countries by continent or search for specific countries by name.💪',
+    technologies: ['React js', 'Redux', 'Redux', 'React-icons', 'Webpack'],
+    live: 'https://world-info.onrender.com/',
+    github: 'https://github.com/leehaney254/world-info',
   },
 ];
 

@@ -11,7 +11,7 @@ const Posts: React.FC = () => {
         <h2 className="text-3xl font-bold mb-8">Tech Adventures 🔥</h2>
         <div className="md:flex md:justify-center md:gap-10 md:flex-wrap md:mx-5">
           {
-            posts.map((element, index) => {
+            posts.slice(0, window.innerWidth < 768 ? 3 : 6).map((element, index) => {
               return (
                 <div key={index} className="relative mt-5">
                   <img className="rounded-xl md:w-72 md:h-80" src={element.Image} alt={element.heading} />

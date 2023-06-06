@@ -12,7 +12,7 @@ const Projects = () => {
       </div>
       <div className='flex flex-col gap-5 lg:gap-10 flex-wrap md:p-5 md:items-center'>
         {
-          Project.map((element, index) => {
+          Project.slice(0, 3).map((element, index) => {
             return (
               <div key={index} className="border-charcoal border-2 p-4 rounded-3xl lg:flex lg:gap-4 lg:w-3/4 lg:h-72">
                 <img className="rounded-xl lg:w-72 lg:h-64" src={element.image} alt="project screenshot" />
@@ -33,8 +33,8 @@ const Projects = () => {
                       }
                     </ul>
                     <div className="flex gap-5">
-                      <a href={element.live} className="flex items-center gap-2">Live Site <AiOutlineArrowRight /></a>
-                      <a href={element.github} className="flex items-center gap-2">GitHub <AiOutlineArrowRight /></a>
+                      <a href={element.live} target="_blank" className="flex items-center gap-2">Live Site <AiOutlineArrowRight /></a>
+                      <a href={element.github} target="_blank" className="flex items-center gap-2">GitHub <AiOutlineArrowRight /></a>
                     </div>
                   </div>
                 </div>
