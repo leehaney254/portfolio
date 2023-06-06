@@ -33,6 +33,7 @@ const Intro: React.FC = () => {
                   exact="true"
                   activeClass="active"
                   key={index}
+                  className="hover:cursor-pointer"
                 >
                   <item.icon className="text-2xl text-green-400" />
                 </Link>
