@@ -15,12 +15,12 @@ const Intro: React.FC = () => {
   }
 
   return (
-    <section className="p-4 bg-black text-white h-screen flex flex-col gap-6 md:items-center md:justify-center md: lg:flex-row">
+    <section id="Intro" className="p-4 bg-black text-white h-screen flex flex-col gap-6 md:items-center md:justify-center md: lg:flex-row">
       <div className="flex justify-end md:fixed md:top-30 md:left-0 md:right-0">
         <div className="md:hidden">
           <Hamburger onToggle={toogleMenu} />
         </div>
-        <div className="hidden md:flex md:flex-col gap-10 items-end md:mr-2">
+        <div className="hidden md:flex md:flex-col gap-10 items-end md:mr-2 bg-black p-3 rounded-2xl">
           {
             menu.map((item, index) => {
               return (
@@ -32,11 +32,9 @@ const Intro: React.FC = () => {
                   spy={true}
                   exact="true"
                   activeClass="active"
+                  key={index}
                 >
-                  <div className="flex gap-2" key={index}>
-                    <p>{item.name}</p>
-                    <item.icon className="text-2xl text-green-400" />
-                  </div>
+                  <item.icon className="text-2xl text-green-400" />
                 </Link>
               )
             })
