@@ -5,7 +5,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Posts: React.FC = () => {
   return (
-    <section className="p-4 mt-8">
+    <section className="p-4 mt-8" id="Articles">
       <div className="flex flex-col gap-2 items-center">
         <p className="text-green-600">FEATURED POSTS</p>
         <h2 className="text-3xl font-bold mb-8">Tech Adventures 🔥</h2>

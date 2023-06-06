@@ -5,7 +5,7 @@ import { languages, libraries, db, tools } from '../data/data';
 
 const About = () => {
   return (
-    <section className="p-4 mt-8 lg:p-10">
+    <section className="p-4 mt-8 lg:p-10" id="About">
       <div className="flex flex-col gap-2 items-center">
         <p className="text-green-600">Who is {name}?</p>
         <h2 className="text-3xl font-bold">A Bit About Me</h2>

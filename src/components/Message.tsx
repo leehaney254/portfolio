@@ -15,7 +15,7 @@ const Message: React.FC = () => {
       });
   };
   return (
-    <section className="p-4 bg-black h-screen text-white">
+    <section className="p-4 bg-black h-screen text-white" id="Contact">
       <div className="flex flex-col gap-2 items-center mt-8">
         <p className="text-green-600">LETS CHAT!</p>
         <h2 className="text-xl font-bold text-center mb-10">Got questions or proposal, or just want to say hello? Go ahead</h2>

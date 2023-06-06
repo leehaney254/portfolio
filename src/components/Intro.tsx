@@ -2,9 +2,8 @@ import React from 'react'
 import { Spin as Hamburger } from 'hamburger-react'
 import { name, profession, catchPhrase, socilaMedia, menu } from '../data/data';
 import imageIntro from '../assets/intro.png';
-import { AiFillHome, AiOutlineFundProjectionScreen, AiOutlineMessage } from "react-icons/ai";
-import { CgProfile } from "react-icons/cg";
-import { MdArticle } from "react-icons/md";
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 
 const Intro: React.FC = () => {
   const toogleMenu = (toogled: any) => {
@@ -25,13 +24,24 @@ const Intro: React.FC = () => {
           {
             menu.map((item, index) => {
               return (
-                <div className="flex gap-2" key={index}>
-                  <p>{item.name}</p>
-                  <item.icon className="text-2xl text-green-400" />
-                </div>
+                <Link
+                  to={item.name}
+                  smooth={true}
+                  duration={500}
+                  offset={-100}
+                  spy={true}
+                  exact="true"
+                  activeClass="active"
+                >
+                  <div className="flex gap-2" key={index}>
+                    <p>{item.name}</p>
+                    <item.icon className="text-2xl text-green-400" />
+                  </div>
+                </Link>
               )
             })
           }
+
         </div>
       </div>
       <div className="mt-38 flex flex-col gap-1 md:flex-row-reverse md:gap-4 md:mt-0">
