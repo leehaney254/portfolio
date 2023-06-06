@@ -3,8 +3,27 @@ import { socilaMedia } from '../data/data';
 import emailjs from 'emailjs-com';
 import massageImg from '../assets/message.png';
 
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
 const Message: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
   const sendEmail = (e: any) => {
     e.preventDefault();
 
@@ -14,6 +33,12 @@ const Message: React.FC = () => {
       }, (error) => {
         console.log(error.text);
       });
+
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
   return (
     <section className="p-4 bg-black h-screen text-white" id="Contact">
@@ -30,6 +55,8 @@ const Message: React.FC = () => {
                 type="text"
                 id="name"
                 name="name"
+                value={formData.name}
+                onChange={handleInputChange}
                 className="inputborder bg-black rounded-md px-4 py-2 w-full"
                 required
               />
@@ -43,6 +70,8 @@ const Message: React.FC = () => {
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
+                onChange={handleInputChange}
                 className="inputborder bg-black rounded-md px-4 py-2 w-full"
                 required
               />
@@ -55,6 +84,8 @@ const Message: React.FC = () => {
               <textarea
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleInputChange}
                 className="inputborder bg-black rounded-md px-4 py-2 w-full"
                 required
               ></textarea>
