@@ -13,4 +13,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   margin-top: 3rem;
   height: 100vh;
+  font-size: xx-large;
+  font-weight: 700;
+  gap: 2rem;
 }
