@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from 'react';
+const Nav = lazy(() => import('../components/Navbar'));
 const Intro = lazy(() => import('../components/Intro'));
 const About = lazy(() => import('../components/About'));
 const Projects = lazy(() => import('../components/Projects'));
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
           width='200'
           color="#4fa94d"
         />}>
+        <Nav />
         <Intro />
         <About />
         <Projects />
