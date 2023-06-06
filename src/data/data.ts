@@ -1,6 +1,9 @@
 import capstone from '../assets/tutors.png';
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { AiFillHome, AiOutlineFundProjectionScreen, AiOutlineMessage } from "react-icons/ai";
+import { CgProfile } from "react-icons/cg";
+import { MdArticle } from "react-icons/md";
 import javaScript from '../assets/javascript.svg';
 import ruby from '../assets/ruby.svg';
 import c from '../assets/c.svg';
@@ -167,5 +170,28 @@ export const posts = [
     heading: "Benefits of diversity",
     like: 100,
     description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+  },
+]
+
+export const menu = [
+  {
+    name: 'Intro',
+    icon: AiFillHome,
+  },
+  {
+    name: 'About',
+    icon: CgProfile,
+  },
+  {
+    name: 'Projects',
+    icon: AiOutlineFundProjectionScreen,
+  },
+  {
+    name: 'Articles',
+    icon: MdArticle,
+  },
+  {
+    name: 'Contact',
+    icon: AiOutlineMessage,
   },
 ]
