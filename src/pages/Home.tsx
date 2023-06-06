@@ -4,11 +4,16 @@ const About = lazy(() => import('../components/About'));
 const Projects = lazy(() => import('../components/Projects'));
 const Posts = lazy(() => import('../components/Posts'));
 const Message = lazy(() => import('../components/Message'));
+import { InfinitySpin } from 'react-loader-spinner';
 
 const Home: React.FC = () => {
   return (
     <main>
-      <Suspense fallback={<h1>Loading</h1>}>
+      <Suspense fallback={
+        <InfinitySpin
+          width='200'
+          color="#4fa94d"
+        />}>
         <Intro />
         <About />
         <Projects />
