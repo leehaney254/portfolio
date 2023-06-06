@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </nav>
-      <nav className="flex justify-end md:fixed md:top-30 md:right-0">
+      <nav className="flex justify-end md:fixed md:top-60 md:right-0">
         <div className="hidden md:flex md:flex-col gap-10 items-end md:mr-2 bg-black p-3 rounded-2xl">
           {
             menu.map((item, index) => {
