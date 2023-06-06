@@ -8,14 +8,14 @@ const Navbar: React.FC = () => {
 
   const toogleMenu = (toogled: any) => {
     if (toogled) {
-      setDisplayMenu("flex flex-col items-center content-center justify-center");
+      setDisplayMenu("flex flex-col items-center content-center justify-center absolute z-10");
     } else {
       setDisplayMenu("hidden");
     }
   }
   return (
     <header>
-      <nav className="md:hidden">
+      <nav className="md:hidden relative">
         <div className="flex justify-end bg-black text-white fixed top-0 right-0 left-0">
           <Hamburger onToggle={toogleMenu} />
         </div>
