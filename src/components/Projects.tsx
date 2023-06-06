@@ -10,7 +10,7 @@ const Projects = () => {
         <p className="text-green-600">MY PROJECTS</p>
         <h2 className="text-3xl font-bold mb-10">Yeah, I work hard 💼</h2>
       </div>
-      <div className='flex flex-col gap-10 flex-wrap md:p-5 md:items-center'>
+      <div className='flex flex-col gap-5 lg:gap-10 flex-wrap md:p-5 md:items-center'>
         {
           Project.map((element, index) => {
             return (
