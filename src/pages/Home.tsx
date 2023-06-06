@@ -1,18 +1,25 @@
-import React from 'react';
-import Intro from '../components/Intro';
-import About from '../components/About';
-import Projects from '../components/Projects';
-import Posts from '../components/Posts';
-import Message from '../components/Message';
+import React, { lazy, Suspense } from 'react';
+const Intro = lazy(() => import('../components/Intro'));
+const About = lazy(() => import('../components/About'));
+const Projects = lazy(() => import('../components/Projects'));
+const Posts = lazy(() => import('../components/Posts'));
+const Message = lazy(() => import('../components/Message'));
+import { InfinitySpin } from 'react-loader-spinner';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <main>
-      <Intro />
-      <About />
-      <Projects />
-      <Posts />
-      <Message />
+      <Suspense fallback={
+        <InfinitySpin
+          width='200'
+          color="#4fa94d"
+        />}>
+        <Intro />
+        <About />
+        <Projects />
+        <Posts />
+        <Message />
+      </Suspense>
     </main>
   )
 }
