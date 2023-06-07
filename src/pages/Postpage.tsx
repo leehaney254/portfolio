@@ -17,20 +17,22 @@ const Postpage: React.FC = () => {
           {
             posts.slice(3).map((article, index) => {
               return (
-                <div key={index}>
-                  <h2 className="text-3xl font-semibold text-green-400">{article.heading}</h2>
-                  <div className="flex gap-2 my-2 text-gray-400">
-                    <p>{article.date}</p>
-                    <p>{article.genre}</p>
+                <Link to={article.link} key={index} target="_blank">
+                  <div>
+                    <h2 className="text-3xl font-semibold text-green-400">{article.heading}</h2>
+                    <div className="flex gap-2 my-2 text-gray-400">
+                      <p>{article.date}</p>
+                      <p>{article.genre}</p>
+                    </div>
+                    <p className="text-lg">{article.description}</p>
                   </div>
-                  <p className="text-lg">{article.description}</p>
-                </div>
+                </Link>
               )
             })
           }
         </div>
       </section>
-    </main>
+    </main >
   )
 }
 

@@ -22,7 +22,10 @@ import vs from '../assets/visualStudio.svg';
 import diverse from '../assets/diversity.jpg'
 import leader from '../assets/leader.png';
 import voice from '../assets/voiceai.png';
-import space from '../assets/spacetraveller.png'
+import space from '../assets/spacetraveller.png';
+import interview from '../assets/interview.webp';
+import technique from '../assets/techn.png';
+import soon from '../assets/soon.jpg';
 
 export const name = 'Leehaney Gerorge';
 
@@ -165,52 +168,58 @@ export const tools = [
 
 export const posts = [
   {
-    Image: diverse,
-    heading: "Benefits of diversity",
-    date: "30 Jan 2023",
+    Image: interview,
+    heading: "My first Interview Expirience",
+    link: "https://medium.com/@georgeleehaney20/my-first-interview-experience-4ea0857c8c14",
+    date: "6 Jun 2023",
     genre: "GENERAL",
+    like: 60,
+    description: "Come with me on an adventure on how diversity can boost work output and quality",
+  },
+  {
+    Image: technique,
+    heading: "4 Techniques you can use to Improve Your Live Coding Interview",
+    link: "https://medium.com/@georgeleehaney20/4-techniques-you-can-use-to-improve-your-live-coding-interview-caf9fc630b26",
+    date: "5 Jun 2023",
+    genre: "INTERVIEW",
     like: 100,
     description: "Come with me on an adventure on how diversity can boost work output and quality",
   },
   {
     Image: diverse,
     heading: "Benefits of diversity",
-    date: "30 Jan 2023",
+    link: "https://medium.com/@georgeleehaney20/studying-at-microverse-what-i-have-learned-about-the-benefits-of-working-in-a-setting-with-diverse-fa42c6f326af",
+    date: "4 Jun 2023",
     genre: "GENERAL",
-    like: 100,
+    like: 30,
     description: "Come with me on an adventure on how diversity can boost work output and quality",
   },
   {
-    Image: diverse,
-    heading: "Benefits of diversity",
+    Image: soon,
+    heading: "working on it",
+    link: "#",
     date: "30 Jan 2023",
     genre: "GENERAL",
-    like: 100,
-    description: "Come with me on an adventure on how diversity can boost work output and quality",
+    like: 1,
+    description: "I will be publishing more articles and updating here. Be patient we are both excited 🥳",
   },
   {
-    Image: diverse,
-    heading: "Benefits of diversity",
+    Image: soon,
+    heading: "working on it",
+    link: "#",
     date: "30 Jan 2023",
     genre: "GENERAL",
-    like: 100,
-    description: "Come with me on an adventure on how diversity can boost work output and quality",
+    like: 1,
+    description: "I will be publishing more articles and updating here. Be patient we are both excited 🥳",
   },
   {
-    Image: diverse,
-    heading: "Benefits of diversity",
+    Image: soon,
+    heading: "working on it",
+    link: "#",
     date: "30 Jan 2023",
     genre: "GENERAL",
-    like: 100,
-    description: "Come with me on an adventure on how diversity can boost work output and quality",
-  },
-  {
-    Image: diverse,
-    heading: "Benefits of diversity",
-    date: "30 Jan 2023",
-    genre: "GENERAL",
-    like: 100,
-    description: "Come with me on an adventure on how diversity can boost work output and quality",
+    like: 1,
+    description: "I will be publishing more articles and updating here. Be patient we are both excited 🥳",
   },
 ]
 
