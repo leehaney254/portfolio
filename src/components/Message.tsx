@@ -97,7 +97,7 @@ const Message: React.FC = () => {
 
             <button
               type="submit"
-              className="bg-green-500 text-white font-bold py-2 px-4 rounded"
+              className="bg-green-500 text-white font-bold py-2 px-4 rounded size"
             >
               Submit
             </button>
@@ -108,7 +108,7 @@ const Message: React.FC = () => {
           {
             socilaMedia.map((element, index) => {
               return (
-                <a key={index} className="text-2xl text-green-400" target="_blank" href={element.link}><element.icon /></a>
+                <a key={index} className="text-2xl text-green-400 size" target="_blank" href={element.link}><element.icon /></a>
               )
             })
           }

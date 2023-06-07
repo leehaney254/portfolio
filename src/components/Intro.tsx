@@ -16,7 +16,7 @@ const Intro: React.FC = () => {
           {
             socilaMedia.map((element, index) => {
               return (
-                <a className="text-2xl text-green-400" key={index} target="_blank" href={element.link}><element.icon /></a>
+                <a className="text-2xl text-green-400 size" key={index} target="_blank" href={element.link}><element.icon /></a>
               )
             })
           }

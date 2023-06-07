@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
                     exact="true"
                     activeClass="active"
                     key={index}
-                    className="hover:cursor-pointer"
+                    className="hover:cursor-pointer size"
                     onClick={removeMenu}
                   >
                     {item.name}
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
                   exact="true"
                   activeClass="active"
                   key={index}
-                  className="hover:cursor-pointer"
+                  className="hover:cursor-pointer size"
                 >
                   <item.icon className="text-2xl text-green-400" />
                 </Link>
