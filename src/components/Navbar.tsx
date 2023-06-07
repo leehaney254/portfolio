@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
       document.body.style.overflow = 'hidden';
-      setDisplayMenu("flex flex-col items-center content-center justify-center fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50");
+      setDisplayMenu("flex flex-col items-center content-center justify-center fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40");
     } else {
       document.body.style.overflow = 'auto';
       setDisplayMenu("hidden");
@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   return (
     <header>
       <nav className="md:hidden relative">
-        <div className="flex justify-end bg-black text-white fixed top-0 right-0 left-0">
+        <div className="flex justify-end bg-black text-white fixed top-0 right-0 left-0 z-50">
           <Hamburger onToggle={removeMenu} />
         </div>
         <div>
