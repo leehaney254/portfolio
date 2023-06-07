@@ -7,7 +7,7 @@ const Postpage: React.FC = () => {
       <header>
         <BiArrowBack className="text-3xl" />
       </header>
-      <h1 className="text-3xl font-bold my-7">Writing</h1>
+      <h1 className="text-3xl font-bold my-7 text-gray-700">Writing</h1>
       <section className="flex flex-col gap-10">
         <div>
           <h2 className="text-3xl font-semibold text-green-400">7 Reasons why I don't write</h2>
