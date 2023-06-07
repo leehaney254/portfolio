@@ -1,9 +1,10 @@
 import React from 'react'
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 import { Project } from '../data/data';
 
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <section className="p-4 bg-black text-white" id="Projects">
       <div className="flex flex-col gap-2 items-center mt-8">
@@ -14,7 +15,7 @@ const Projects = () => {
         {
           Project.slice(0, 3).map((element, index) => {
             return (
-              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl lg:flex lg:gap-4 lg:w-3/4 lg:h-72">
+              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl lg:flex lg:gap-4 lg:w-3/4">
                 <img className="rounded-xl lg:w-72 lg:h-64" src={element.image} alt="project screenshot" />
                 <div className="lg:flex lg:flex-col gap-2 ">
                   <p className="text-charcoal">{index + 1}</p>
@@ -44,7 +45,9 @@ const Projects = () => {
         }
       </div>
       <div className="flex justify-end mt-5 mb-5">
-        <p className="flex items-center text-lg gap-2 text-green-600">Other notable Projects <AiOutlineArrowRight /></p>
+        <Link to="/projects">
+          <p className="flex items-center text-lg gap-2 text-green-600">Other notable Projects <AiOutlineArrowRight /></p>
+        </Link>
       </div>
     </section>
   )

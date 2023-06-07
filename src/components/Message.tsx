@@ -16,6 +16,8 @@ const Message: React.FC = () => {
     message: ''
   });
 
+  const [reply, setReply] = useState<boolean>(false);
+
   const handleInputChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -30,6 +32,7 @@ const Message: React.FC = () => {
     emailjs.sendForm('service_32o15ew', 'template_wmb2vmh', e.target, 'DeF4bbsnMMS2DaOY9')
       .then((result) => {
         console.log(result.text);
+        setReply(true);
       }, (error) => {
         console.log(error.text);
       });
@@ -47,6 +50,7 @@ const Message: React.FC = () => {
         <h2 className="text-xl font-bold text-center mb-10">Got questions or proposal, or just want to say hello? Go ahead</h2>
         <div className="md:flex gap-24">
           <form onSubmit={sendEmail}>
+            {reply && <p className="text-green-600">Thank you for your message!</p>}
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
                 Your Name

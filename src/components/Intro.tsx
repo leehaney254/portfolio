@@ -1,48 +1,11 @@
-import React from 'react'
-import { Spin as Hamburger } from 'hamburger-react'
-import { name, profession, catchPhrase, socilaMedia, menu } from '../data/data';
+import React from 'react';
+import { name, profession, catchPhrase, socilaMedia } from '../data/data';
 import imageIntro from '../assets/intro.png';
-import { Link, animateScroll as scroll } from 'react-scroll';
 
 
 const Intro: React.FC = () => {
-  const toogleMenu = (toogled: any) => {
-    if (toogled) {
-      console.log("menu")
-    } else {
-      console.log("not menu")
-    }
-  }
-
   return (
-    <section id="Intro" className="p-4 bg-black text-white h-screen flex flex-col gap-6 md:items-center md:justify-center md: lg:flex-row">
-      <div className="flex justify-end md:fixed md:top-30 md:right-0">
-        <div className="md:hidden">
-          <Hamburger onToggle={toogleMenu} />
-        </div>
-        <div className="hidden md:flex md:flex-col gap-10 items-end md:mr-2 bg-black p-3 rounded-2xl">
-          {
-            menu.map((item, index) => {
-              return (
-                <Link
-                  to={item.name}
-                  smooth={true}
-                  duration={500}
-                  offset={-100}
-                  spy={true}
-                  exact="true"
-                  activeClass="active"
-                  key={index}
-                  className="hover:cursor-pointer"
-                >
-                  <item.icon className="text-2xl text-green-400" />
-                </Link>
-              )
-            })
-          }
-
-        </div>
-      </div>
+    <section id="Intro" className="p-4 mt-10 md:mt-0 bg-black text-white h-screen flex flex-col gap-6 md:items-center md:justify-center md: lg:flex-row">
       <div className="mt-38 flex flex-col gap-1 md:flex-row-reverse md:gap-4 md:mt-0">
         <div>
           <h1 className="text-3xl font-bold lg:text-5xl">{name}</h1>

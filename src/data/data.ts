@@ -20,6 +20,12 @@ import git from '../assets/git.svg';
 import github from '../assets/github.svg';
 import vs from '../assets/visualStudio.svg';
 import diverse from '../assets/diversity.jpg'
+import leader from '../assets/leader.png';
+import voice from '../assets/voiceai.png';
+import space from '../assets/spacetraveller.png';
+import interview from '../assets/interview.webp';
+import technique from '../assets/techn.png';
+import soon from '../assets/soon.jpg';
 
 export const name = 'Leehaney Gerorge';
 
@@ -72,6 +78,30 @@ export const Project = [
     technologies: ['React js', 'Redux', 'Redux', 'React-icons', 'Webpack'],
     live: 'https://world-info.onrender.com/',
     github: 'https://github.com/leehaney254/world-info',
+  },
+  {
+    image: voice,
+    title: 'News-AI',
+    description: 'Ushering in the era of artificial intelligence🥳, this is a website controlled entirely by voice. One can search for the latest news🙂, navigate through the website by voice😁, make the AI read the news headline for them, and even open the news website by voice.',
+    technologies: ['React js', 'Alan AI', 'Material-UI', 'React-icons', 'Webpack'],
+    live: 'https://world-info.onrender.com/',
+    github: 'https://github.com/leehaney254/world-info',
+  },
+  {
+    image: space,
+    title: 'Space travellers',
+    description: '🚀✨ Embark on the Ultimate Adventure: Book Your Epic Space Flight with Space Travelers\' Hub! 🌌💫🌍 Dreamed of exploring the cosmos and reaching for the stars? Your once-in-a-lifetime opportunity is here, courtesy of Space Travelers\' Hub – the world\'s premier platform to book your very own space flight and fulfill your wildest extraterrestrial dreams! 🌠🚀',
+    technologies: ['React js', 'Redux', 'Redux', 'React-Bootsrap', 'Webpack'],
+    live: 'https://space-travelers-hub-fvaz.onrender.com/',
+    github: 'https://github.com/leehaney254/space-travelers',
+  },
+  {
+    image: leader,
+    title: 'Leaderboard',
+    description: '⚔️🔢 Unleash Your Competitive Spirit: Introducing Leaderboard! Your Ultimate Companion for Game Scorekeeping! 🏆✨🕹️ Are you tired of losing track of scores during intense gaming sessions? Level up your game with Leaderboard, the game-changer website that allows you to effortlessly keep tabs on scores, conquer challenges, and reign supreme in the world of gaming! 🎮🔥',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
+    live: 'https://leehaney254.github.io/Leaderboard/',
+    github: 'https://github.com/leehaney254/Leaderboard',
   },
 ];
 
@@ -138,40 +168,58 @@ export const tools = [
 
 export const posts = [
   {
-    Image: diverse,
-    heading: "Benefits of diversity",
+    Image: interview,
+    heading: "My first Interview Expirience",
+    link: "https://medium.com/@georgeleehaney20/my-first-interview-experience-4ea0857c8c14",
+    date: "6 Jun 2023",
+    genre: "GENERAL",
+    like: 60,
+    description: "Come with me on an adventure on how diversity can boost work output and quality",
+  },
+  {
+    Image: technique,
+    heading: "4 Techniques you can use to Improve Your Live Coding Interview",
+    link: "https://medium.com/@georgeleehaney20/4-techniques-you-can-use-to-improve-your-live-coding-interview-caf9fc630b26",
+    date: "5 Jun 2023",
+    genre: "INTERVIEW",
     like: 100,
-    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+    description: "Come with me on an adventure on how diversity can boost work output and quality",
   },
   {
     Image: diverse,
     heading: "Benefits of diversity",
-    like: 100,
-    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+    link: "https://medium.com/@georgeleehaney20/studying-at-microverse-what-i-have-learned-about-the-benefits-of-working-in-a-setting-with-diverse-fa42c6f326af",
+    date: "4 Jun 2023",
+    genre: "GENERAL",
+    like: 30,
+    description: "Come with me on an adventure on how diversity can boost work output and quality",
   },
   {
-    Image: diverse,
-    heading: "Benefits of diversity",
-    like: 100,
-    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+    Image: soon,
+    heading: "working on it",
+    link: "#",
+    date: "30 Jan 2023",
+    genre: "GENERAL",
+    like: 1,
+    description: "I will be publishing more articles and updating here. Be patient we are both excited 🥳",
   },
   {
-    Image: diverse,
-    heading: "Benefits of diversity",
-    like: 100,
-    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+    Image: soon,
+    heading: "working on it",
+    link: "#",
+    date: "30 Jan 2023",
+    genre: "GENERAL",
+    like: 1,
+    description: "I will be publishing more articles and updating here. Be patient we are both excited 🥳",
   },
   {
-    Image: diverse,
-    heading: "Benefits of diversity",
-    like: 100,
-    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
-  },
-  {
-    Image: diverse,
-    heading: "Benefits of diversity",
-    like: 100,
-    description: "Here I talk about the benefits of working in a diverse culture and my personal ecpiriences.",
+    Image: soon,
+    heading: "working on it",
+    link: "#",
+    date: "30 Jan 2023",
+    genre: "GENERAL",
+    like: 1,
+    description: "I will be publishing more articles and updating here. Be patient we are both excited 🥳",
   },
 ]
 
