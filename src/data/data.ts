@@ -20,6 +20,9 @@ import git from '../assets/git.svg';
 import github from '../assets/github.svg';
 import vs from '../assets/visualStudio.svg';
 import diverse from '../assets/diversity.jpg'
+import leader from '../assets/leader.png';
+import voice from '../assets/voiceai.png';
+import space from '../assets/spacetraveller.png'
 
 export const name = 'Leehaney Gerorge';
 
@@ -74,28 +77,28 @@ export const Project = [
     github: 'https://github.com/leehaney254/world-info',
   },
   {
-    image: world,
-    title: 'World-Info',
-    description: '🌟 This is an exciting mobile web application that provides an immersive experience for all geography lovers out there. With this app, you can easily discover and learn more about countries around the world in just a few clicks. The app is user-friendly, with a simple interface that allows you to filter countries by continent or search for specific countries by name.💪',
-    technologies: ['React js', 'Redux', 'Redux', 'React-icons', 'Webpack'],
+    image: voice,
+    title: 'News-AI',
+    description: 'Ushering in the era of artificial intelligence🥳, this is a website controlled entirely by voice. One can search for the latest news🙂, navigate through the website by voice😁, make the AI read the news headline for them, and even open the news website by voice.',
+    technologies: ['React js', 'Alan AI', 'Material-UI', 'React-icons', 'Webpack'],
     live: 'https://world-info.onrender.com/',
     github: 'https://github.com/leehaney254/world-info',
   },
   {
-    image: world,
-    title: 'World-Info',
-    description: '🌟 This is an exciting mobile web application that provides an immersive experience for all geography lovers out there. With this app, you can easily discover and learn more about countries around the world in just a few clicks. The app is user-friendly, with a simple interface that allows you to filter countries by continent or search for specific countries by name.💪',
-    technologies: ['React js', 'Redux', 'Redux', 'React-icons', 'Webpack'],
-    live: 'https://world-info.onrender.com/',
-    github: 'https://github.com/leehaney254/world-info',
+    image: space,
+    title: 'Space travellers',
+    description: '🚀✨ Embark on the Ultimate Adventure: Book Your Epic Space Flight with Space Travelers\' Hub! 🌌💫🌍 Dreamed of exploring the cosmos and reaching for the stars? Your once-in-a-lifetime opportunity is here, courtesy of Space Travelers\' Hub – the world\'s premier platform to book your very own space flight and fulfill your wildest extraterrestrial dreams! 🌠🚀',
+    technologies: ['React js', 'Redux', 'Redux', 'React-Bootsrap', 'Webpack'],
+    live: 'https://space-travelers-hub-fvaz.onrender.com/',
+    github: 'https://github.com/leehaney254/space-travelers',
   },
   {
-    image: world,
-    title: 'World-Info',
-    description: '🌟 This is an exciting mobile web application that provides an immersive experience for all geography lovers out there. With this app, you can easily discover and learn more about countries around the world in just a few clicks. The app is user-friendly, with a simple interface that allows you to filter countries by continent or search for specific countries by name.💪',
-    technologies: ['React js', 'Redux', 'Redux', 'React-icons', 'Webpack'],
-    live: 'https://world-info.onrender.com/',
-    github: 'https://github.com/leehaney254/world-info',
+    image: leader,
+    title: 'Leaderboard',
+    description: '⚔️🔢 Unleash Your Competitive Spirit: Introducing Leaderboard! Your Ultimate Companion for Game Scorekeeping! 🏆✨🕹️ Are you tired of losing track of scores during intense gaming sessions? Level up your game with Leaderboard, the game-changer website that allows you to effortlessly keep tabs on scores, conquer challenges, and reign supreme in the world of gaming! 🎮🔥',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
+    live: 'https://leehaney254.github.io/Leaderboard/',
+    github: 'https://github.com/leehaney254/Leaderboard',
   },
 ];
 
