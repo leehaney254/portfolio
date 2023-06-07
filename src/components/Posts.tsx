@@ -2,6 +2,7 @@ import React from 'react'
 import { posts } from '../data/data';
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const Posts: React.FC = () => {
   return (
@@ -32,7 +33,9 @@ const Posts: React.FC = () => {
         </div>
       </div>
       <div className="flex justify-end mt-5 mb-5">
-        <p className="flex items-center text-lg gap-2 text-green-600">See All Posts <AiOutlineArrowRight /></p>
+        <Link to="/posts">
+          <p className="flex items-center text-lg gap-2 text-green-600">See All Posts <AiOutlineArrowRight /></p>
+        </Link>
       </div>
     </section>
   )
