@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
         {
           Project.slice(0, 3).map((element, index) => {
             return (
-              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl lg:flex lg:gap-4 lg:w-3/4 lg:h-72">
+              <div key={index} className="border-charcoal border-2 p-4 rounded-3xl lg:flex lg:gap-4 lg:w-3/4">
                 <img className="rounded-xl lg:w-72 lg:h-64" src={element.image} alt="project screenshot" />
                 <div className="lg:flex lg:flex-col gap-2 ">
                   <p className="text-charcoal">{index + 1}</p>

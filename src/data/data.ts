@@ -73,6 +73,30 @@ export const Project = [
     live: 'https://world-info.onrender.com/',
     github: 'https://github.com/leehaney254/world-info',
   },
+  {
+    image: world,
+    title: 'World-Info',
+    description: '🌟 This is an exciting mobile web application that provides an immersive experience for all geography lovers out there. With this app, you can easily discover and learn more about countries around the world in just a few clicks. The app is user-friendly, with a simple interface that allows you to filter countries by continent or search for specific countries by name.💪',
+    technologies: ['React js', 'Redux', 'Redux', 'React-icons', 'Webpack'],
+    live: 'https://world-info.onrender.com/',
+    github: 'https://github.com/leehaney254/world-info',
+  },
+  {
+    image: world,
+    title: 'World-Info',
+    description: '🌟 This is an exciting mobile web application that provides an immersive experience for all geography lovers out there. With this app, you can easily discover and learn more about countries around the world in just a few clicks. The app is user-friendly, with a simple interface that allows you to filter countries by continent or search for specific countries by name.💪',
+    technologies: ['React js', 'Redux', 'Redux', 'React-icons', 'Webpack'],
+    live: 'https://world-info.onrender.com/',
+    github: 'https://github.com/leehaney254/world-info',
+  },
+  {
+    image: world,
+    title: 'World-Info',
+    description: '🌟 This is an exciting mobile web application that provides an immersive experience for all geography lovers out there. With this app, you can easily discover and learn more about countries around the world in just a few clicks. The app is user-friendly, with a simple interface that allows you to filter countries by continent or search for specific countries by name.💪',
+    technologies: ['React js', 'Redux', 'Redux', 'React-icons', 'Webpack'],
+    live: 'https://world-info.onrender.com/',
+    github: 'https://github.com/leehaney254/world-info',
+  },
 ];
 
 export const languages = [
