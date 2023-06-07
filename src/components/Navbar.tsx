@@ -6,13 +6,16 @@ import { menu } from '../data/data';
 const Navbar: React.FC = () => {
   const [displayMenu, setDisplayMenu] = useState<string>("hidden");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
 
   const removeMenu = () => {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
+      setOpen(true);
       document.body.style.overflow = 'hidden';
       setDisplayMenu("flex flex-col items-center content-center justify-center fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40");
     } else {
+      setOpen(false);
       document.body.style.overflow = 'auto';
       setDisplayMenu("hidden");
     }
@@ -22,7 +25,7 @@ const Navbar: React.FC = () => {
     <header>
       <nav className="md:hidden relative">
         <div className="flex justify-end bg-black text-white fixed top-0 right-0 left-0 z-50">
-          <Hamburger onToggle={removeMenu} />
+          <Hamburger toggled={isOpen} onToggle={removeMenu} />
         </div>
         <div>
           <div className={`${displayMenu} menuColor`}>
