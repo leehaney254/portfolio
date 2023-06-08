@@ -2,11 +2,10 @@ import React from 'react';
 import { name, aboutParagraph } from '../data/data';
 import profile from '../assets/profile.jpg'
 import { languages, libraries, db, tools } from '../data/data';
-import './about.css';
 
 const About: React.FC = () => {
   return (
-    <section className="p-4 mt-8 lg:p-10 about" id="About">
+    <section className="p-4 mt-8 lg:p-10" id="About">
       <div className="flex flex-col gap-2 items-center">
         <p className="text-green-600">Who is {name}?</p>
         <h2 className="text-3xl font-bold">A Bit About Me</h2>
