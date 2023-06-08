@@ -27,7 +27,7 @@ import interview from '../assets/interview.webp';
 import technique from '../assets/techn.png';
 import soon from '../assets/soon.jpg';
 
-export const name = 'Leehaney Gerorge';
+export const name = 'Leehaney George';
 
 export const profession = "I'm a Software Developer";
 
