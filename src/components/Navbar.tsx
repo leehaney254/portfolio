@@ -38,7 +38,6 @@ const Navbar: React.FC = () => {
                     duration={500}
                     offset={-100}
                     spy={true}
-                    exact="true"
                     activeClass="active"
                     key={index}
                     className="hover:cursor-pointer size"
@@ -63,7 +62,6 @@ const Navbar: React.FC = () => {
                   duration={500}
                   offset={-100}
                   spy={true}
-                  exact="true"
                   activeClass="active"
                   key={index}
                   className="hover:cursor-pointer size"
