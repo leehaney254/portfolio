@@ -27,3 +27,17 @@
 .size:active {
   transform: scale(0.8);
 }
+
+.animated {
+  position: absolute;
+  top: 50%;
+  font-size: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, translate 0.3s;
+}
+
+.over:hover .animated {
+  opacity: 1;
+  visibility: visible;
+}
