@@ -16,7 +16,7 @@ const Projecpage: React.FC = () => {
         <h1 className="text-3xl font-bold my-7 text-gray-700">Projects</h1>
         <div className="flex flex-col gap-10 items-center">
           {
-            Project.slice(3).map((element, index) => {
+            Project.slice(4).map((element, index) => {
               return (
                 <div key={index} className="border-charcoal border-2 p-4 rounded-3xl md:flex md:gap-4 md:w-3/4">
                   <img className="rounded-xl md:w-72 md:h-64" src={element.image} alt="project screenshot" />

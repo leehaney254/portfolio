@@ -60,7 +60,7 @@ export const Project = [
     title: 'Tutors Appointment',
     description: '🌟 Seeking Quality Education? Look No Further! 📚✨ 🔥 Introducing Tutors-appointment! 🎓 Your ultimate destination for booking top-notch tutors tailored to your learning needs! With authentication and authorization implimented privilages and roles have been easily assigned to users and administrators.💪',
     technologies: ['React js', 'Redux', 'Tailwind', 'Ruby on Rails', 'Postgresql'],
-    live: 'https://starlit-syrniki-d3f2fe.netlify.app/login',
+    live: 'https://starlit-syrniki-d3f2fe.netlify.app/',
     github: 'https://github.com/leehaney254/tutors-appointment-frontend',
   },
   {
@@ -84,8 +84,8 @@ export const Project = [
     title: 'News-AI',
     description: 'Ushering in the era of artificial intelligence🥳, this is a website controlled entirely by voice. One can search for the latest news🙂, navigate through the website by voice😁, make the AI read the news headline for them, and even open the news website by voice.',
     technologies: ['React js', 'Alan AI', 'Material-UI', 'React-icons', 'Webpack'],
-    live: 'https://world-info.onrender.com/',
-    github: 'https://github.com/leehaney254/world-info',
+    live: 'https://leehaney254.github.io/voice-ai/',
+    github: 'https://github.com/leehaney254/voice-ai',
   },
   {
     image: space,
