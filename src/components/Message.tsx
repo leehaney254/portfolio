@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, ChangeEvent } from 'react'
 import { socilaMedia } from '../data/data';
 import emailjs from 'emailjs-com';
 import massageImg from '../assets/message.png';

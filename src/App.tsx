@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { InfinitySpin } from 'react-loader-spinner';
 const Home = lazy(() => import('./pages/Home'));
 const Project = lazy(() => import('./pages/Projecpage'));
