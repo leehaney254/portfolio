@@ -1,0 +1,16 @@
+.about {
+  opacity: 0;
+  animation: opacity-animation 2s forwards;
+}
+
+@keyframes opacity-animation {
+  0% {
+    opacity: 0;
+    /* Start position */
+  }
+
+  100% {
+    opacity: 1;
+    /* End position */
+  }
+}

@@ -174,7 +174,7 @@ export const posts = [
     date: "6 Jun 2023",
     genre: "GENERAL",
     like: 60,
-    description: "Come with me on an adventure on how diversity can boost work output and quality",
+    description: "The first time is always the hardest. Let's share expiriences on our first.",
   },
   {
     Image: technique,
@@ -183,7 +183,7 @@ export const posts = [
     date: "5 Jun 2023",
     genre: "INTERVIEW",
     like: 100,
-    description: "Come with me on an adventure on how diversity can boost work output and quality",
+    description: "Lights, Camera, Action. It's your time to shine and give your best performance in a live interview",
   },
   {
     Image: diverse,

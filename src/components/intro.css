@@ -1,0 +1,35 @@
+.introanime {
+  max-width: 650px;
+  margin-left: -999px;
+  animation: slide-in-animation 2s forwards;
+}
+
+@keyframes slide-in-animation {
+  0% {
+    margin-left: -999px;
+    /* Start position */
+  }
+
+  100% {
+    margin-left: 0;
+    /* End position */
+  }
+}
+
+.imageIntro {
+  max-width: 650px;
+  margin-right: -999px;
+  animation: slide-right-animation 2s forwards;
+}
+
+@keyframes slide-right-animation {
+  0% {
+    margin-right: -999px;
+    /* Start position */
+  }
+
+  100% {
+    margin-right: 0;
+    /* End position */
+  }
+}

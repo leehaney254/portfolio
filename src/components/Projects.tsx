@@ -34,8 +34,8 @@ const Projects: React.FC = () => {
                       }
                     </ul>
                     <div className="flex gap-5">
-                      <a href={element.live} target="_blank" className="flex items-center gap-2">Live Site <AiOutlineArrowRight /></a>
-                      <a href={element.github} target="_blank" className="flex items-center gap-2">GitHub <AiOutlineArrowRight /></a>
+                      <a href={element.live} target="_blank" className="flex items-center gap-2 size projectsLink">Live Site <AiOutlineArrowRight /></a>
+                      <a href={element.github} target="_blank" className="flex items-center gap-2 size projectsLink">GitHub <AiOutlineArrowRight /></a>
                     </div>
                   </div>
                 </div>
