@@ -24,7 +24,7 @@
 
 # 📖 My Portfolio <a name="about-project"></a>
 
-This is my personal portfolio where I get the chance display my professional skills.
+This is my personal portfolio where I get the chance display my professional skills. I will be updating it progressively.
 
 ## 🛠 Built With <a name="built-with"></a>
 - React
