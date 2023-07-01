@@ -22,7 +22,7 @@ const About: React.FC = () => {
                 {
                   languages.map((item, index) => {
                     return (
-                      <img key={index} src={item.link} alt={item.name} />
+                      <img className="w-20 h-20" key={index} src={item.link} alt={item.name} />
                     );
                   })
                 }
@@ -34,7 +34,7 @@ const About: React.FC = () => {
                 {
                   libraries.map((item, index) => {
                     return (
-                      <img key={index} src={item.link} alt={item.name} />
+                      <img className="w-20 h-20" key={index} src={item.link} alt={item.name} />
                     );
                   })
                 }
@@ -46,7 +46,7 @@ const About: React.FC = () => {
                 {
                   db.map((item, index) => {
                     return (
-                      <img key={index} src={item.link} alt={item.name} />
+                      <img className="w-20 h-20" key={index} src={item.link} alt={item.name} />
                     );
                   })
                 }
@@ -58,7 +58,7 @@ const About: React.FC = () => {
                 {
                   tools.map((item, index) => {
                     return (
-                      <img key={index} src={item.link} alt={item.name} />
+                      <img className="w-20 h-20" key={index} src={item.link} alt={item.name} />
                     );
                   })
                 }
