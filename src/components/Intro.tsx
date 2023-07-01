@@ -10,7 +10,7 @@ const Intro: React.FC = () => {
       <div className="mt-38 flex flex-col gap-1 md:flex-row-reverse md:items-center md:gap-4 md:mt-0 introanime">
         <div>
           <h1 className="text-3xl font-bold lg:text-5xl">{name}</h1>
-          <p className="text-xl">{profession}</p>
+          <p className="text-xl my-2">{profession}</p>
           <p className="text-lg">{catchPhrase}</p>
         </div>
         <div className="flex flex-row gap-2 md:flex-col">
