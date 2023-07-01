@@ -2,6 +2,7 @@ import React, { useState, ChangeEvent } from 'react'
 import { socilaMedia } from '../data/data';
 import emailjs from 'emailjs-com';
 import massageImg from '../assets/message.png';
+import kenya from '../assets/kenya.png';
 
 interface FormData {
   name: string;
@@ -113,6 +114,7 @@ const Message: React.FC = () => {
             })
           }
         </div>
+        <p className="flex items-center">&copy; made with ❤ by Leehaney <img src={kenya} alt="kenya flag" /></p>
       </div>
     </section>
   )
