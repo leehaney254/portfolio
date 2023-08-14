@@ -170,9 +170,9 @@ export const posts = [
   {
     Image: interview,
     heading: "My first Interview Expirience",
-    link: "https://medium.com/@georgeleehaney20/my-first-interview-experience-4ea0857c8c14",
+    link: "https://medium.com/@georgeleehaney20/graphs-df7370898d5e",
     date: "6 Jun 2023",
-    genre: "GENERAL",
+    genre: "Data Structure and Algorithms",
     like: 100,
     description: "Have you ever wondered how social media recommends friends? Come let me show you the secret",
   },
