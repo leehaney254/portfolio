@@ -169,9 +169,9 @@ export const tools = [
 export const posts = [
   {
     Image: interview,
-    heading: "My first Interview Expirience",
+    heading: "Graphs",
     link: "https://medium.com/@georgeleehaney20/graphs-df7370898d5e",
-    date: "6 Jun 2023",
+    date: "29 July 2023",
     genre: "Data Structure and Algorithms",
     like: 100,
     description: "Have you ever wondered how social media recommends friends? Come let me show you the secret",
