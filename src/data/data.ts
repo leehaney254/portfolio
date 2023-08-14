@@ -26,6 +26,7 @@ import space from '../assets/spacetraveller.png';
 import interview from '../assets/interview.webp';
 import technique from '../assets/techn.png';
 import soon from '../assets/soon.jpg';
+import graph from '../assets/graph.png'
 
 export const name = 'Leehaney George';
 
@@ -168,7 +169,7 @@ export const tools = [
 
 export const posts = [
   {
-    Image: interview,
+    Image: graph,
     heading: "Graphs",
     link: "https://medium.com/@georgeleehaney20/graphs-df7370898d5e",
     date: "29 July 2023",
