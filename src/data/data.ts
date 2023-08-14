@@ -221,15 +221,6 @@ export const posts = [
     like: 1,
     description: "I will be publishing more articles and updating here. Be patient we are both excited 🥳",
   },
-  {
-    Image: soon,
-    heading: "working on it",
-    link: "#",
-    date: "30 Jan 2023",
-    genre: "GENERAL",
-    like: 1,
-    description: "I will be publishing more articles and updating here. Be patient we are both excited 🥳",
-  },
 ]
 
 export const menu = [
